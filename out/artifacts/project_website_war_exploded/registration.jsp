@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<form method="post" action="index">
+<form method="post" action="login">
     <hr/>
     <p style="margin-left:65px">Регистрация</p>
     <hr/>

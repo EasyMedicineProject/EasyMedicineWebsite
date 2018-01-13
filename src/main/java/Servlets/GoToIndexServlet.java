@@ -27,48 +27,29 @@ public class GoToIndexServlet extends HttpServlet {
 
 
         System.out.println(url);
-        if (url.equals("http://localhost:8080/login.jsp")/*TOZI LOGIN E OT INDEXA*/|| url.equals("http://localhost:8080/login")/*TOZI LINK E OT LOGIN SLED SMQNA NA PASS*/) {
+        if (url.equals("http://localhost:8080/login.jsp")/*TOZI LOGIN E OT INDEXA*/|| url.equals("http://localhost:8080/login")/*TOZI LINK E OT LOGIN SLED SMQNA NA PASS*/ ) {
             String email = request.getParameter("email");
             System.out.println("vzeh emaila");
             String password = request.getParameter("password");
             System.out.println("vzeh parolata");
             System.out.println("Variables: " + email + password);
-            HttpSession session = request.getSession();
             LoginModel model = new LoginModel();
             String type = model.authenticateLogin(email, password);
             System.out.println("LOGIN message: " + type);
             if (type.equals("SUCCESS")) {
-                session.setAttribute("check", true);
+                HttpSession session = request.getSession();
+                session.setAttribute("isLogged", true);
                 session.setAttribute("username", email);
                 session.setAttribute("password", password);
-                RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-                rd.forward(request, response);
+                response.sendRedirect("/index.jsp");
 
             } else if (type.equals("FAIL")) {
-                session.setAttribute("check", false);
-                RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
-                rd.forward(request, response);
+                HttpSession session = request.getSession();
+                session.setAttribute("isLogged", false);
+                response.sendRedirect("/login.jsp");
             }
         }
 
-        else if(url.equals("http://localhost:8080/registration.jsp")/* TOZI E OT REGISTER KYM INDEX */) {
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            String username= request.getParameter("username");
-            System.out.println("PARAMETRITE OT REGISTER FORMATA SA VZETI");
-            User user = new User();
-            try {
-                user.CreateRegistration(email, password,username);
-                RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-                rd.forward(request, response);
-            } catch (SQLException e) {
-                e.printStackTrace();
-                RequestDispatcher rd = request.getRequestDispatcher("/registration.jsp");
-                rd.forward(request, response);
-            }
-
-
-        }
 
         else if(url.equals("http://localhost:8080/manage_account.jsp")/*TOZI E OT ACCOUNT CHANGE KYM INDEX*/){
             HttpSession session = request.getSession(true);
@@ -80,12 +61,24 @@ public class GoToIndexServlet extends HttpServlet {
             if (inputedPassword.equals(currentPassword)){
                 AccountDelete accountDelete= new AccountDelete();
                 accountDelete.deleteAccount(username);
-                RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-                rd.forward(request, response);
+                if (session != null) {
+                    session.invalidate();
+                }
+                response.sendRedirect("/index.jsp");
             }
             else{
                 System.out.println("spira na proverka na parolata");
             }
+        }
+
+        else if (url.equals("http://localhost:8080/index.jsp" )){
+            System.out.println("predi if-a sym");
+            HttpSession session = request.getSession(false);
+            System.out.println("oshte po blizko do if-a");
+            if (session != null) {
+                session.invalidate();}
+                response.sendRedirect("/index.jsp");
+
         }
 
 

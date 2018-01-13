@@ -18,17 +18,55 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <form action="login.jsp">
-        <input type="submit" class="btn btn-success"  value="Влез">
-    </form>
+<%
+    System.out.println(session.getAttribute("isLogged"));
+    if (session.getAttribute("isLogged") != null){
+    if ((Boolean) session.getAttribute("isLogged")) {
+        System.out.println("You are logged in.");
+        response.setHeader("Cache-Control",
+                "no-cache, no-store, must-revalidate");// HTTP 1.1
+        response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+        response.setDateHeader("Expires", 0); // Proxies.
+%>
+<form method="POST" action="index">
+    <input type="submit"  class="btn btn-warning" value="излезни">
+</form>
 
-    <form action="registration.jsp">
-        <input type="submit" class="btn btn-danger"  value="Регистрирай се">
-    </form>
+<form action="manage_account.jsp">
+    <input type="submit" class="btn btn-info" value="Настройки акаунт">
+</form>
+<%
+    } else {
+        System.out.println("v mrysniq if sym");%>
+<form action="login.jsp">
+    <input type="submit" class="btn btn-success" value="Влез">
+</form>
 
-    <form action="manage_account.jsp">
-        <input type="submit" class="btn btn-info"  value="Настройки акаунт">
-    </form>
+<form action="registration.jsp">
+    <input type="submit" class="btn btn-danger" value="Регистрирай се">
+</form>
+
+       <% }}
+        else if(session.getAttribute("isLogged") == null){
+           System.out.println("na pravilnoto mqsto sym");
+           response.setHeader("Cache-Control",
+                   "no-cache, no-store, must-revalidate");// HTTP 1.1
+           response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+           response.setDateHeader("Expires", 0); // Proxies.
+%>
+<form action="login.jsp">
+    <input type="submit" class="btn btn-success" value="Влез">
+</form>
+
+<form action="registration.jsp">
+    <input type="submit" class="btn btn-danger" value="Регистрирай се">
+</form>
+<%
+    }
+%>
+
+
+
 </body>
 </form>
 </body>

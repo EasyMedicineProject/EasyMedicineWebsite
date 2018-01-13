@@ -12,7 +12,7 @@ public class dbConnector {
         System.out.println("DB Connection initialized.");
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/naturalmedicine?autoReconnect=true&useSSL=false", "root", "admivan2001");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/naturalmedicine?autoReconnect=true&useSSL=false", "root", "toor");
             if(!con.isClosed()) out.println("Success");
 
         } catch (Exception e) {
