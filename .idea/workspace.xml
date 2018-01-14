@@ -6,41 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba70782-7a9d-4035-84f1-a35f118c9c1f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/login_after_wrong_password.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/AccountDelete.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/AccountDelete.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/LoginModel.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/LoginModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/PasswordChange.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/PasswordChange.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/User.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Models/User.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/AccountManagment.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/AccountManagment.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/GoToIndexServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/GoToIndexServlet.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/Logout.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Servlets/Logout.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Utils/dbConnector.class" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/WEB-INF/classes/Utils/dbConnector.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/registration.jsp" afterPath="$PROJECT_DIR$/out/artifacts/project_website_war_exploded/registration.jsp" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/project_website.iml" afterPath="$PROJECT_DIR$/project_website.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/LoginModel.java" afterPath="$PROJECT_DIR$/src/main/java/Models/LoginModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User.java" afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AccountManagment.java" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AccountManagment.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/GoToIndexServlet.java" afterPath="$PROJECT_DIR$/src/main/java/Servlets/GoToIndexServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/dbConnector.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/dbConnector.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/AccountDelete.class" afterPath="$PROJECT_DIR$/target/classes/Models/AccountDelete.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/LoginModel.class" afterPath="$PROJECT_DIR$/target/classes/Models/LoginModel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/PasswordChange.class" afterPath="$PROJECT_DIR$/target/classes/Models/PasswordChange.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/User.class" afterPath="$PROJECT_DIR$/target/classes/Models/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/AccountManagment.class" afterPath="$PROJECT_DIR$/target/classes/Servlets/AccountManagment.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/GoToIndexServlet.class" afterPath="$PROJECT_DIR$/target/classes/Servlets/GoToIndexServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Logout.class" afterPath="$PROJECT_DIR$/target/classes/Servlets/Logout.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utils/dbConnector.class" afterPath="$PROJECT_DIR$/target/classes/Utils/dbConnector.class" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
-    </list>
+    <list default="true" id="fba70782-7a9d-4035-84f1-a35f118c9c1f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
